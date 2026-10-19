@@ -174,9 +174,7 @@ main {
 }
 
 .section {
-  min-height: 100vh;
-  min-height: 100svh;
-  min-height: 100dvh;
+  min-height: auto;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -188,8 +186,13 @@ main {
   background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;
-  padding: clamp(35px, 6vh, 65px) 0;
+  padding: clamp(22px, 4vh, 42px) 0;
   box-sizing: border-box;
+}
+
+#groom {
+  min-height: 82svh;
+  min-height: 82dvh;
 }
 
 .section:before {
@@ -220,8 +223,8 @@ main {
   margin-right: auto;
   padding-left: clamp(16px, 4vw, 24px);
   padding-right: clamp(16px, 4vw, 24px);
-  padding-top: clamp(25px, 4vh, 50px);
-  padding-bottom: clamp(25px, 4vh, 50px);
+  padding-top: clamp(8px, 1.5vh, 16px);
+  padding-bottom: clamp(8px, 1.5vh, 16px);
   box-sizing: border-box;
   text-align: center;
   display: flex;
@@ -229,8 +232,8 @@ main {
   align-items: center;
   justify-content: center;
   opacity: 0;
-  transform: translateY(24px);
-  transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transform: translateY(18px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.8s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .section.visible .content {
@@ -246,15 +249,15 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 4px;
-  margin-bottom: 16px;
+  gap: 2px;
+  margin-bottom: 8px;
   position: relative;
   width: 100%;
 }
 
 .auspicious-symbol {
   font-family: 'Noto Serif Tamil', serif;
-  font-size: clamp(42px, 11vw, 62px);
+  font-size: clamp(34px, 8.5vw, 52px);
   font-weight: 700;
   line-height: 1;
   color: #fff1b8;
@@ -277,7 +280,7 @@ main {
 
 .auspicious-caption {
   font-family: 'Noto Serif Tamil', 'Cinzel', serif;
-  font-size: clamp(13px, 3.2vw, 16px);
+  font-size: clamp(12px, 2.8vw, 15px);
   font-weight: 600;
   letter-spacing: 0.14em;
   color: #ebd087;
@@ -291,30 +294,30 @@ main {
   font-family: 'Cinzel', serif;
   letter-spacing: 0.3em;
   text-transform: uppercase;
-  font-size: clamp(11px, 2.5vw, 13px);
+  font-size: clamp(10px, 2.2vw, 12px);
   color: #ffe3a0;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
 }
 
 .role-heading {
   font-family: 'Great Vibes', cursive !important;
   text-transform: none !important;
   letter-spacing: 0.02em !important;
-  font-size: clamp(48px, 11vw, 76px) !important;
+  font-size: clamp(42px, 10vw, 68px) !important;
   line-height: 0.95;
   color: #ffe7a0 !important;
   text-shadow: 0 3px 20px rgba(0, 0, 0, 0.6), 0 0 22px rgba(246, 216, 137, 0.35);
-  margin-bottom: 10px !important;
+  margin-bottom: 4px !important;
 }
 
 .name {
   font-family: 'Cinzel', serif;
-  font-size: clamp(26px, 6.8vw, 50px);
+  font-size: clamp(24px, 6vw, 44px);
   letter-spacing: 0.05em;
   line-height: 1.15;
   color: #fff6d7;
   text-shadow: 0 4px 18px #000, 0 0 25px rgba(245, 211, 126, 0.25);
-  margin: 4px 0 14px;
+  margin: 2px 0 8px;
   word-break: break-word;
   overflow-wrap: break-word;
   width: 100%;
@@ -322,16 +325,16 @@ main {
 
 .script {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(50px, 11.5vw, 92px);
-  line-height: 0.9;
+  font-size: clamp(42px, 10vw, 78px);
+  line-height: 0.92;
   color: #fff0bf;
   text-shadow: 0 4px 22px rgba(0, 0, 0, 0.6), 0 0 25px rgba(246, 216, 137, 0.3);
   width: 100%;
 }
 
 .relation {
-  margin-top: 14px;
-  font-size: clamp(15px, 3.5vw, 19px);
+  margin-top: 6px;
+  font-size: clamp(14px, 3.2vw, 17px);
   letter-spacing: 0.03em;
   color: #ffe8bd;
   text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
@@ -339,24 +342,24 @@ main {
   max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  line-height: 1.45;
+  line-height: 1.38;
 }
 
 .orn {
   color: var(--gold2);
-  font-size: 24px;
-  margin: 16px 0;
+  font-size: 20px;
+  margin: 8px 0;
   text-shadow: 0 0 12px rgba(246, 216, 137, 0.5);
 }
 
 .scroll-cue {
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 8.5px;
   letter-spacing: 0.22em;
   color: #f6dc9c;
   opacity: 0.85;
@@ -369,14 +372,14 @@ main {
 .scroll-cue:after {
   content: '↓';
   display: block;
-  font-size: 19px;
+  font-size: 16px;
   text-align: center;
   margin-top: 2px;
 }
 
 @keyframes floatCue {
   0%, 100% { transform: translate(-50%, 0); }
-  50% { transform: translate(-50%, 6px); }
+  50% { transform: translate(-50%, 5px); }
 }
 
 /* ========================================================
@@ -387,9 +390,9 @@ main {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 10px 16px;
-  margin: 14px auto 0;
-  padding: 12px 20px;
+  gap: 8px 14px;
+  margin: 10px auto 0;
+  padding: 10px 18px;
   background: linear-gradient(145deg, rgba(35, 14, 8, 0.75), rgba(65, 24, 12, 0.68));
   border: 1px solid rgba(246, 216, 137, 0.55);
   border-radius: 999px;
@@ -410,7 +413,7 @@ main {
 
 .profile-label {
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 8.5px;
   letter-spacing: 0.22em;
   color: #eec873;
   text-transform: uppercase;
@@ -422,7 +425,7 @@ main {
 
 .profile-val {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(16px, 4vw, 21px);
+  font-size: clamp(15px, 3.8vw, 20px);
   font-weight: 600;
   color: #fff6e0;
   letter-spacing: 0.02em;
@@ -431,14 +434,14 @@ main {
 
 .profile-dot {
   color: #e5b85a;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 @media (max-width: 480px) {
   .profile-card {
-    border-radius: 20px;
-    padding: 11px 16px;
-    gap: 8px 12px;
+    border-radius: 18px;
+    padding: 8px 12px;
+    gap: 6px 10px;
   }
 }
 
@@ -452,14 +455,14 @@ main {
 
 .story-card {
   width: 100%;
-  max-width: 540px;
+  max-width: 520px;
   margin-left: auto;
   margin-right: auto;
-  padding: clamp(26px, 5.5vw, 40px) clamp(16px, 4.5vw, 32px);
+  padding: clamp(18px, 4.5vw, 30px) clamp(14px, 4vw, 24px);
   border: 1.5px solid rgba(245, 211, 126, 0.85);
-  border-radius: 28px;
+  border-radius: 24px;
   background: linear-gradient(155deg, rgba(35, 13, 7, 0.88), rgba(72, 26, 13, 0.82));
-  box-shadow: 0 24px 75px rgba(0,0,0,0.6), 0 0 35px rgba(224, 177, 65, 0.22), inset 0 0 45px rgba(246, 216, 137, 0.08);
+  box-shadow: 0 20px 65px rgba(0,0,0,0.6), 0 0 30px rgba(224, 177, 65, 0.22), inset 0 0 40px rgba(246, 216, 137, 0.08);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   text-align: center;
@@ -473,39 +476,39 @@ main {
   position: absolute;
   inset: 6px;
   border: 1px dashed rgba(245, 211, 126, 0.35);
-  border-radius: 22px;
+  border-radius: 20px;
   pointer-events: none;
 }
 
 .story-kicker {
   font-family: 'Cinzel', serif;
-  font-size: clamp(10px, 2.4vw, 11px);
+  font-size: clamp(9.5px, 2.2vw, 11px);
   letter-spacing: 0.3em;
   color: #f7dc9c;
   text-transform: uppercase;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .story-math-symbols {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  font-size: clamp(17px, 4.2vw, 22px);
+  gap: 10px;
+  font-size: clamp(16px, 3.8vw, 20px);
   color: #f0c96c;
-  margin-bottom: 14px;
+  margin-bottom: 8px;
   text-shadow: 0 0 10px rgba(240, 201, 108, 0.5);
 }
 
 .story-quote {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(21px, 5.2vw, 34px);
-  line-height: 1.38;
+  font-size: clamp(18px, 4.6vw, 30px);
+  line-height: 1.34;
   font-weight: 600;
   font-style: italic;
   color: #fff7e4;
   text-shadow: 0 3px 16px rgba(0,0,0,0.7), 0 0 24px rgba(245, 211, 126, 0.35);
-  margin: 10px 0 16px;
+  margin: 6px 0 10px;
   padding: 0 4px;
   word-break: break-word;
   overflow-wrap: break-word;
@@ -535,15 +538,15 @@ main {
 }
 
 .story-divider {
-  width: 120px;
+  width: 100px;
   height: 1px;
   background: linear-gradient(90deg, transparent, #f6d889, transparent);
-  margin: 18px auto;
+  margin: 12px auto;
 }
 
 .story-couple {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(34px, 7.5vw, 50px);
+  font-size: clamp(30px, 7vw, 44px);
   color: #ffe8ab;
   line-height: 1;
   text-shadow: 0 2px 14px rgba(0,0,0,0.6);
@@ -551,11 +554,11 @@ main {
 
 .story-sub {
   font-family: 'Cinzel', serif;
-  font-size: clamp(8.5px, 2.1vw, 10.5px);
+  font-size: clamp(8px, 2vw, 10px);
   letter-spacing: 0.16em;
   color: #e5c77a;
-  margin-top: 8px;
-  line-height: 1.45;
+  margin-top: 6px;
+  line-height: 1.4;
   text-transform: uppercase;
 }
 
@@ -568,16 +571,19 @@ main {
 
 .scratch-card {
   width: 100%;
-  max-width: 360px;
-  height: 235px;
-  margin: 22px auto 0;
+  max-width: 340px;
+  height: 215px;
+  margin: 14px auto 0;
   position: relative;
   border-radius: 20px;
   overflow: hidden;
   border: 1.5px solid rgba(255, 220, 128, 0.85);
-  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5), 0 0 30px rgba(224, 177, 65, 0.2);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5), 0 0 28px rgba(224, 177, 65, 0.2);
   touch-action: none;
   box-sizing: border-box;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .scratch-under {
@@ -589,23 +595,23 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 14px;
   text-align: center;
   user-select: none;
 }
 
 .scratch-kicker {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 9.5px;
   letter-spacing: 0.26em;
   color: #6b3e12;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   font-weight: 600;
 }
 
 .scratch-under .date {
   font-family: 'Cinzel', serif;
-  font-size: clamp(21px, 5.5vw, 25px);
+  font-size: clamp(19px, 5vw, 24px);
   font-weight: 700;
   letter-spacing: 0.08em;
   color: #4b2509;
@@ -613,9 +619,9 @@ main {
 
 .scratch-under .day {
   font-family: 'Cinzel', serif;
-  font-size: clamp(16px, 4vw, 20px);
+  font-size: clamp(15px, 3.8vw, 18px);
   letter-spacing: 0.18em;
-  margin-top: 6px;
+  margin-top: 4px;
   color: #613410;
   font-weight: 600;
 }
@@ -625,8 +631,10 @@ main {
   inset: 0;
   width: 100%;
   height: 100%;
-  cursor: grab;
+  cursor: pointer;
   touch-action: none;
+  -webkit-user-select: none;
+  user-select: none;
 }
 
 .scratch-canvas:active {
@@ -634,9 +642,9 @@ main {
 }
 
 .scratch-hint {
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.06em;
-  margin-top: 15px;
+  margin-top: 10px;
   color: #ffe9ad;
   text-shadow: 0 2px 8px rgba(0,0,0,0.6);
   transition: opacity 0.4s ease;
@@ -691,14 +699,14 @@ main {
 
 .editorial-card {
   width: 100%;
-  max-width: 520px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  padding: clamp(26px, 5.5vw, 36px) clamp(16px, 4.5vw, 28px);
+  padding: clamp(18px, 4.5vw, 28px) clamp(14px, 4vw, 22px);
   border: 1px solid rgba(245, 211, 126, 0.72);
-  border-radius: 28px;
+  border-radius: 24px;
   background: linear-gradient(180deg, rgba(24, 9, 5, 0.76), rgba(66, 24, 12, 0.62));
-  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), inset 0 0 40px rgba(246, 216, 137, 0.05);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.55), inset 0 0 35px rgba(246, 216, 137, 0.05);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   text-align: center;
@@ -707,16 +715,16 @@ main {
 
 .event-kicker {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
+  font-size: 9.5px;
   letter-spacing: 0.32em;
   color: #f6d889;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   text-transform: uppercase;
 }
 
 .event-date {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(50px, 11vw, 74px);
+  font-size: clamp(42px, 9.5vw, 64px);
   line-height: 0.9;
   color: #ffe7a0;
   text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
@@ -725,33 +733,33 @@ main {
 .event-date span {
   display: block;
   font-family: 'Cinzel', serif;
-  font-size: clamp(14px, 3.6vw, 20px);
+  font-size: clamp(13px, 3.2vw, 17px);
   letter-spacing: 0.26em;
-  margin: 6px 0 2px;
+  margin: 4px 0 2px;
   color: #fff0c6;
 }
 
 .event-day {
   font-family: 'Cinzel', serif;
-  font-size: 11px;
+  font-size: 10.5px;
   letter-spacing: 0.32em;
   color: #f2d27f;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .gold-rule {
-  width: 120px;
+  width: 100px;
   height: 1px;
   background: linear-gradient(90deg, transparent, #f6d889, transparent);
-  margin: 20px auto;
+  margin: 14px auto;
 }
 
 .event-row {
   display: flex;
   align-items: flex-start;
   text-align: left;
-  gap: 14px;
-  padding: 13px 0;
+  gap: 12px;
+  padding: 9px 0;
   border-bottom: 1px solid rgba(245, 211, 126, 0.18);
 }
 
@@ -760,15 +768,15 @@ main {
 }
 
 .event-row .event-icon {
-  flex: 0 0 34px;
-  width: 34px;
-  height: 34px;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
   border: 1px solid rgba(246, 216, 137, 0.65);
   border-radius: 50%;
   display: grid;
   place-items: center;
   color: #f7d985;
-  font-size: 15px;
+  font-size: 13px;
   margin-top: 2px;
   background: rgba(45, 18, 9, 0.5);
 }
@@ -776,25 +784,25 @@ main {
 .event-row b {
   display: block;
   font-family: 'Cinzel', serif;
-  font-size: 9px;
+  font-size: 8.5px;
   letter-spacing: 0.22em;
   color: #e9ca7d;
-  margin-bottom: 4px;
+  margin-bottom: 3px;
   text-transform: uppercase;
 }
 
 .event-row strong {
   display: block;
   font-family: 'Cinzel', serif;
-  font-size: clamp(14px, 3.4vw, 16px);
+  font-size: clamp(13.5px, 3.2vw, 15.5px);
   line-height: 1.35;
   color: #fff3d0;
 }
 
 .event-row p {
-  margin: 5px 0 0;
-  font-size: clamp(13.5px, 3.1vw, 15.5px);
-  line-height: 1.4;
+  margin: 3px 0 0;
+  font-size: clamp(13px, 2.9vw, 14.5px);
+  line-height: 1.35;
   color: #ffe8bd;
 }
 
@@ -802,19 +810,19 @@ main {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 8px;
   border: 1px solid #f4d27f;
   background: linear-gradient(135deg, rgba(117, 50, 19, 0.92), rgba(70, 26, 12, 0.96));
   color: #fff4d2;
   border-radius: 999px;
-  padding: 12px 24px;
+  padding: 10px 20px;
   text-decoration: none;
   font-family: 'Cinzel', serif;
   letter-spacing: 0.14em;
-  font-size: 11px;
+  font-size: 10.5px;
   text-transform: uppercase;
   box-shadow: 0 0 24px rgba(236, 190, 73, 0.25);
-  margin-top: 18px;
+  margin-top: 14px;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
@@ -963,20 +971,20 @@ main {
 .panel {
   background: rgba(37, 17, 10, 0.55);
   border: 1px solid rgba(245, 210, 127, 0.45);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  padding: clamp(26px, 5.5vw, 40px) clamp(16px, 4.5vw, 30px);
-  border-radius: 26px;
+  padding: clamp(18px, 4.5vw, 28px) clamp(14px, 4vw, 24px);
+  border-radius: 24px;
   width: 100%;
-  max-width: 540px;
+  max-width: 500px;
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
 }
 
 .guest-message {
-  font-size: clamp(22px, 5.2vw, 36px);
+  font-size: clamp(19px, 4.6vw, 30px);
   line-height: 1.32;
   font-style: italic;
   color: #fff0c7;
@@ -992,33 +1000,33 @@ main {
 
 .countdown-sub {
   font-family: 'Cinzel', serif;
-  font-size: clamp(10px, 2.4vw, 11px);
+  font-size: clamp(9.5px, 2.2vw, 11px);
   letter-spacing: 0.22em;
   color: #f7dda1;
-  margin: 16px 0;
+  margin: 8px 0 10px;
   text-transform: uppercase;
   width: 100%;
 }
 
 .countdown-box {
   width: 100%;
-  max-width: 500px;
-  margin: 20px auto;
+  max-width: 480px;
+  margin: 10px auto;
   display: flex;
   align-items: stretch;
   justify-content: center;
-  padding: 16px 8px;
+  padding: 12px 6px;
   border: 1px solid rgba(248, 219, 143, 0.62);
-  border-radius: 22px;
+  border-radius: 20px;
   background: rgba(35, 14, 7, 0.68);
   backdrop-filter: blur(6px);
   -webkit-backdrop-filter: blur(6px);
-  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
   box-sizing: border-box;
 }
 
 .count-unit {
-  min-width: clamp(52px, 14vw, 74px);
+  min-width: clamp(48px, 13vw, 70px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1027,7 +1035,7 @@ main {
 
 .count-unit strong {
   font-family: 'Cinzel', serif;
-  font-size: clamp(24px, 6.8vw, 40px);
+  font-size: clamp(22px, 6.2vw, 36px);
   color: #fff1bd;
   line-height: 1;
 }
@@ -1037,12 +1045,12 @@ main {
   font-size: 8px;
   letter-spacing: 0.2em;
   color: #e6c776;
-  margin-top: 8px;
+  margin-top: 6px;
 }
 
 .count-sep {
   font-family: 'Cinzel', serif;
-  font-size: 24px;
+  font-size: 20px;
   color: #f1d487;
   display: flex;
   align-items: center;
@@ -1052,9 +1060,9 @@ main {
 .countdown-art {
   position: relative;
   width: 100%;
-  max-width: 440px;
-  margin: 14px auto 0;
-  min-height: 270px;
+  max-width: 420px;
+  margin: 10px auto 0;
+  min-height: auto;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -1063,23 +1071,38 @@ main {
 
 .countdown-frame {
   width: 100%;
-  max-width: 400px;
+  max-width: 360px;
   margin: 0 auto;
   padding: 0;
   border: 2px solid rgba(238, 202, 111, 0.98);
-  border-radius: 26px;
+  border-radius: 22px;
   overflow: hidden;
-  background: none;
-  box-shadow: 0 0 28px rgba(224, 177, 65, 0.25);
+  background: rgba(25, 10, 5, 0.6);
+  box-shadow: 0 10px 32px rgba(0, 0, 0, 0.55), 0 0 26px rgba(224, 177, 65, 0.3);
   box-sizing: border-box;
+  animation: framePulse 3.5s ease-in-out infinite alternate;
+}
+
+@keyframes framePulse {
+  0% {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5), 0 0 18px rgba(224, 177, 65, 0.25);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.65), 0 0 32px rgba(246, 216, 137, 0.5);
+    transform: scale(1.012);
+  }
 }
 
 .countdown-frame .countdown-couple {
   width: 100%;
-  max-height: 48svh;
-  border-radius: 24px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  max-height: 42svh;
+  border-radius: 20px;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center 25%;
 }
 
 /* ========================================================
@@ -1089,7 +1112,7 @@ main {
   position: relative;
   background: #170b07;
   text-align: center;
-  padding: 80px 20px 120px;
+  padding: clamp(35px, 5vh, 50px) 16px clamp(40px, 6vh, 60px);
   color: #ffe8bd;
   overflow: hidden;
   border-top: 1px solid rgba(246, 216, 137, 0.2);
@@ -1099,27 +1122,47 @@ main {
 
 #footer .footer-line {
   font-family: 'Great Vibes', cursive;
-  font-size: clamp(40px, 8.5vw, 66px);
+  font-size: clamp(36px, 7.5vw, 56px);
   color: #f6d889;
   text-shadow: 0 3px 18px rgba(0, 0, 0, 0.5);
 }
 
 #footer .footer-copy {
-  max-width: 540px;
-  margin: 12px auto 26px;
-  font-size: clamp(17px, 3.8vw, 21px);
-  line-height: 1.45;
+  max-width: 500px;
+  margin: 8px auto 16px;
+  font-size: clamp(15px, 3.4vw, 18px);
+  line-height: 1.4;
   color: #fff0cf;
-  padding: 0 14px;
+  padding: 0 12px;
 }
 
-#footer .made {
+.footer-credit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.made-by-text {
   font-family: 'Cinzel', serif;
-  font-size: 10px;
-  letter-spacing: 0.2em;
+  font-size: clamp(11.5px, 2.8vw, 13.5px);
+  letter-spacing: 0.16em;
   text-transform: uppercase;
   color: #e9c977;
-  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.made-by-text .tamil-bold {
+  font-family: 'Noto Serif Tamil', serif;
+  font-weight: 700;
+  text-transform: none;
+  letter-spacing: 0.04em;
+  color: #fff1b8;
+  font-size: clamp(13px, 3.2vw, 15px);
 }
 
 .insta-link {
@@ -1473,8 +1516,9 @@ body.invitation-open #music-control {
   </section>
 
   <!-- ==========================================
-       SECTION 5: WEDDING FEAST & RECEPTION
+       SECTION 5: WEDDING FEAST & RECEPTION (COMMENTED OUT)
        ========================================== -->
+  <!--
   <section class="section" id="dinner">
     <div class="content">
       <div class="event-card editorial-card dinner-card">
@@ -1506,10 +1550,12 @@ body.invitation-open #music-control {
       </div>
     </div>
   </section>
+  -->
 
   <!-- ==========================================
-       SECTION 6: OUR GALLERY
+       SECTION 6: OUR GALLERY (COMMENTED OUT)
        ========================================== -->
+  <!--
   <section class="section" id="gallery">
     <div class="content">
       <div class="script">Our Gallery</div>
@@ -1534,6 +1580,7 @@ body.invitation-open #music-control {
       </div>
     </div>
   </section>
+  -->
 
   <!-- ==========================================
        SECTION 7: A MESSAGE FOR YOU
@@ -1542,7 +1589,7 @@ body.invitation-open #music-control {
     <div class="content">
       <div class="panel">
         <div class="eyebrow">From our hearts</div>
-        <div class="script">A Message for You</div>
+        <div class="script"> Message for You</div>
         <div class="orn">❦</div>
         <div class="guest-message">“Your presence, blessings and love will make our celebration truly complete.”</div>
         <div class="orn">❦</div>
@@ -1569,7 +1616,7 @@ body.invitation-open #music-control {
       </div>
       <div class="countdown-art">
         <div class="countdown-frame">
-          <img src="images/countdown-couple.png" alt="Couple portrait" class="countdown-couple">
+          <img src="images/couple-photo.png" alt="Couple portrait" class="countdown-couple">
         </div>
       </div>
     </div>
@@ -1580,15 +1627,17 @@ body.invitation-open #music-control {
 <footer id="footer">
   <div class="footer-line">See you there</div>
   <div class="footer-copy">With love, laughter, and a beautiful beginning to forever.</div>
-  <div class="made">Vimal Shankar &amp; Visali</div>
-  <a class="insta-link" href="https://www.instagram.com/craft_and_celebrate/" target="_blank" rel="noopener noreferrer" aria-label="Open Craft and Celebrate on Instagram">
-    <svg class="insta-svg" viewBox="0 0 24 24" aria-hidden="true">
-      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
-      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
-      <circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"></circle>
-    </svg>
-    <span>@craft_and_celebrate</span>
-  </a>
+  <div class="footer-credit">
+    <div class="made-by-text">Made with <span class="tamil-bold">அன்பு தம்பி</span></div>
+    <a class="insta-link" href="https://www.instagram.com/senthilkumar_sn?mdxt=ODV3aW5sZTlqa3d1" target="_blank" rel="noopener noreferrer" aria-label="Open Senthilkumar Developer on Instagram">
+      <svg class="insta-svg" viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+        <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"></circle>
+      </svg>
+      <span>@SENTHILKUMAR DEVELOPER</span>
+    </a>
+  </div>
 </footer>
 
 <!-- AUDIO & MUSIC TOGGLE -->
@@ -1597,7 +1646,7 @@ body.invitation-open #music-control {
 </audio>
 
 <button id="music-control" class="music-disabled" aria-label="Turn background music on or off">
-  <span class="music-art"><img src="images/music-couple-new.png" alt=""></span>
+  <!-- <span class="music-art"><img src="images/music-couple-new.png" alt=""></span> -->
   <span class="music-pill">
     <span class="music-icon">♫</span>
     <span id="musicText">MUSIC</span>
@@ -1633,7 +1682,10 @@ function finishOpening() {
     opening.style.pointerEvents = 'none';
     document.body.classList.add('invitation-open');
     window.scrollTo({ top: 0, behavior: 'auto' });
-    setTimeout(() => dissolve.classList.remove('dissolve-on'), 1200);
+    setTimeout(() => {
+      dissolve.classList.remove('dissolve-on');
+      if (typeof sizeCanvas === 'function') sizeCanvas();
+    }, 1200);
   }, 850);
 }
 
@@ -1690,7 +1742,7 @@ const observer = new IntersectionObserver(
   entries => entries.forEach(e => {
     if (e.isIntersecting) e.target.classList.add('visible');
   }),
-  { threshold: 0.15 }
+  { threshold: 0.08 }
 );
 document.querySelectorAll('.section').forEach(s => observer.observe(s));
 
@@ -1725,21 +1777,27 @@ function spawnPetal() {
 setInterval(spawnPetal, 450);
 for (let i = 0; i < 8; i++) setTimeout(spawnPetal, i * 150);
 
-// Interactive Scratch Card
+// Interactive Scratch Card (Full Support for Tap, Click, Pointer & Touch on All Devices)
 const card = document.getElementById('scratchCard');
 const canvas = document.getElementById('scratchCanvas');
 const ctx = canvas.getContext('2d');
 const hint = document.querySelector('.scratch-hint');
 const burst = document.getElementById('burst');
-let strokes = 0, drawing = false, revealed = false;
-let startX = 0, startY = 0, lastX = 0, lastY = 0, moved = 0;
+let drawing = false, revealed = false;
+let startX = 0, startY = 0, lastX = 0, lastY = 0, totalMoved = 0;
+let lastWidth = 0, lastHeight = 0;
 
 function sizeCanvas() {
-  if (revealed) return;
+  if (revealed || !card || !canvas) return;
   const r = card.getBoundingClientRect();
+  if (r.width === 0 || r.height === 0) return;
+  if (Math.abs(r.width - lastWidth) < 2 && Math.abs(r.height - lastHeight) < 2) return;
+  lastWidth = r.width;
+  lastHeight = r.height;
+
   const d = Math.min(window.devicePixelRatio || 1, 2);
-  canvas.width = r.width * d;
-  canvas.height = r.height * d;
+  canvas.width = Math.round(r.width * d);
+  canvas.height = Math.round(r.height * d);
   canvas.style.width = r.width + 'px';
   canvas.style.height = r.height + 'px';
   ctx.setTransform(d, 0, 0, d, 0, 0);
@@ -1747,83 +1805,127 @@ function sizeCanvas() {
 
   const g = ctx.createLinearGradient(0, 0, r.width, r.height);
   g.addColorStop(0, '#8b5a22');
-  g.addColorStop(0.5, '#e5c15e');
+  g.addColorStop(0.3, '#d6a74a');
+  g.addColorStop(0.65, '#f6d889');
   g.addColorStop(1, '#9b6827');
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, r.width, r.height);
 
-  ctx.fillStyle = 'rgba(255, 246, 203, 0.88)';
-  ctx.font = '600 16px Cinzel, serif';
+  ctx.strokeStyle = 'rgba(255, 235, 160, 0.45)';
+  ctx.lineWidth = 1.5;
+  ctx.strokeRect(6, 6, r.width - 12, r.height - 12);
+
+  ctx.fillStyle = '#3e200a';
+  ctx.font = '700 14px Cinzel, serif';
   ctx.textAlign = 'center';
-  ctx.fillText('SCRATCH HERE', r.width / 2, r.height / 2 + 5);
+  ctx.textBaseline = 'middle';
+  ctx.fillText('✨ TAP OR SCRATCH ✨', r.width / 2, r.height / 2);
   ctx.globalCompositeOperation = 'destination-out';
 }
+
 sizeCanvas();
-window.addEventListener('resize', sizeCanvas);
+window.addEventListener('resize', () => {
+  if (!revealed) sizeCanvas();
+});
 
-function pos(ev) {
+function getCoords(ev) {
   const r = canvas.getBoundingClientRect();
-  return { x: ev.clientX - r.left, y: ev.clientY - r.top };
+  let cx = ev.clientX;
+  let cy = ev.clientY;
+  if (cx === undefined && ev.touches && ev.touches[0]) {
+    cx = ev.touches[0].clientX;
+    cy = ev.touches[0].clientY;
+  } else if (cx === undefined && ev.changedTouches && ev.changedTouches[0]) {
+    cx = ev.changedTouches[0].clientX;
+    cy = ev.changedTouches[0].clientY;
+  }
+  return {
+    x: (cx !== undefined ? cx : 0) - r.left,
+    y: (cy !== undefined ? cy : 0) - r.top
+  };
 }
 
-function scratch(ev) {
-  if (!drawing || revealed) return;
-  ev.preventDefault();
-  const q = pos(ev);
-  const dx = q.x - lastX, dy = q.y - lastY;
-  moved += Math.hypot(dx, dy);
-
+function eraseCircle(x, y, radius = 26) {
   ctx.beginPath();
-  ctx.moveTo(lastX, lastY);
-  ctx.lineTo(q.x, q.y);
-  ctx.lineWidth = 44;
-  ctx.lineCap = 'round';
-  ctx.stroke();
-
-  ctx.beginPath();
-  ctx.arc(q.x, q.y, 22, 0, Math.PI * 2);
+  ctx.arc(x, y, radius, 0, Math.PI * 2);
   ctx.fill();
-  lastX = q.x;
-  lastY = q.y;
 }
 
-function startScratch(ev) {
+function eraseLine(x1, y1, x2, y2, width = 46) {
+  ctx.beginPath();
+  ctx.moveTo(x1, y1);
+  ctx.lineTo(x2, y2);
+  ctx.lineWidth = width;
+  ctx.lineCap = 'round';
+  ctx.lineJoin = 'round';
+  ctx.stroke();
+  ctx.beginPath();
+  ctx.arc(x2, y2, width / 2, 0, Math.PI * 2);
+  ctx.fill();
+}
+
+function onScratchStart(ev) {
   if (revealed) return;
-  ev.preventDefault();
   drawing = true;
-  moved = 0;
-  const q = pos(ev);
-  startX = lastX = q.x;
-  startY = lastY = q.y;
-  scratch(ev);
+  totalMoved = 0;
+  const p = getCoords(ev);
+  startX = lastX = p.x;
+  startY = lastY = p.y;
+  eraseCircle(p.x, p.y, 24);
   try { canvas.setPointerCapture(ev.pointerId); } catch (e) {}
 }
 
-function stopScratch(ev) {
-  if (!drawing) return;
-  drawing = false;
-  const distance = Math.hypot(lastX - startX, lastY - startY);
-  if (Math.max(distance, moved) >= 50) {
-    strokes++;
-    hint.textContent = strokes < 2 ? 'Scratch again • 1 swipe left' : 'Revealing…';
-    if (strokes >= 2) revealCard();
+function onScratchMove(ev) {
+  if (!drawing || revealed) return;
+  if (ev.cancelable) ev.preventDefault();
+  const p = getCoords(ev);
+  const dx = p.x - lastX, dy = p.y - lastY;
+  const dist = Math.hypot(dx, dy);
+  if (dist > 3) {
+    totalMoved += dist;
+    eraseLine(lastX, lastY, p.x, p.y, 44);
+    lastX = p.x;
+    lastY = p.y;
+    if (totalMoved > 90) {
+      revealCard();
+    }
   }
-  try { canvas.releasePointerCapture(ev.pointerId); } catch (e) {}
 }
 
-canvas.addEventListener('pointerdown', startScratch);
-canvas.addEventListener('pointermove', scratch);
-canvas.addEventListener('pointerup', stopScratch);
-canvas.addEventListener('pointercancel', stopScratch);
+function onScratchEnd(ev) {
+  if (!drawing) return;
+  drawing = false;
+  try { canvas.releasePointerCapture(ev.pointerId); } catch (e) {}
+  // If clicked/tapped (totalMoved < 20) or scratched enough (totalMoved >= 40)
+  if (totalMoved < 20 || totalMoved >= 40) {
+    revealCard();
+  }
+}
+
+canvas.addEventListener('pointerdown', onScratchStart);
+canvas.addEventListener('pointermove', onScratchMove);
+canvas.addEventListener('pointerup', onScratchEnd);
+canvas.addEventListener('pointercancel', onScratchEnd);
+
+// Touch fallback
+canvas.addEventListener('touchstart', onScratchStart, { passive: false });
+canvas.addEventListener('touchmove', onScratchMove, { passive: false });
+canvas.addEventListener('touchend', onScratchEnd, { passive: false });
+
+// Direct click fallback on card
+card.addEventListener('click', () => {
+  if (!revealed) revealCard();
+});
 
 function revealCard() {
   if (revealed) return;
   revealed = true;
   card.classList.add('revealed');
-  canvas.style.transition = 'opacity 0.7s ease';
+  canvas.style.transition = 'opacity 0.65s ease, transform 0.65s ease';
   canvas.style.opacity = '0';
+  canvas.style.transform = 'scale(1.03)';
   canvas.style.pointerEvents = 'none';
-  hint.textContent = 'Revealed with love ✨';
+  if (hint) hint.textContent = 'Revealed with love ✨';
 
   // Confetti celebration burst
   for (let i = 0; i < 75; i++) {
@@ -1840,29 +1942,34 @@ function revealCard() {
   }
 }
 
-// Gallery Carousel with Touch Swiping and Arrow Navigation
+// Gallery Carousel with Touch Swiping and Arrow Navigation (Safely guarded)
 const track = document.getElementById('galleryTrack');
-const slides = [...document.querySelectorAll('.gallery-slide')];
-const dots = [...document.querySelectorAll('.gallery-dot')];
-let galleryIndex = 0;
+if (track) {
+  const slides = [...document.querySelectorAll('.gallery-slide')];
+  const dots = [...document.querySelectorAll('.gallery-dot')];
+  let galleryIndex = 0;
 
-function goGallery(i) {
-  galleryIndex = (i + slides.length) % slides.length;
-  track.scrollTo({ left: slides[galleryIndex].offsetLeft, behavior: 'smooth' });
-  dots.forEach((d, n) => d.classList.toggle('active', n === galleryIndex));
-}
-
-document.getElementById('prevGallery').addEventListener('click', () => goGallery(galleryIndex - 1));
-document.getElementById('nextGallery').addEventListener('click', () => goGallery(galleryIndex + 1));
-dots.forEach((d, i) => d.addEventListener('click', () => goGallery(i)));
-
-track.addEventListener('scroll', () => {
-  const i = Math.round(track.scrollLeft / (track.clientWidth || 1));
-  if (i !== galleryIndex && i >= 0 && i < slides.length) {
-    galleryIndex = i;
+  function goGallery(i) {
+    if (slides.length === 0) return;
+    galleryIndex = (i + slides.length) % slides.length;
+    track.scrollTo({ left: slides[galleryIndex].offsetLeft, behavior: 'smooth' });
     dots.forEach((d, n) => d.classList.toggle('active', n === galleryIndex));
   }
-}, { passive: true });
+
+  const prevBtn = document.getElementById('prevGallery');
+  if (prevBtn) prevBtn.addEventListener('click', () => goGallery(galleryIndex - 1));
+  const nextBtn = document.getElementById('nextGallery');
+  if (nextBtn) nextBtn.addEventListener('click', () => goGallery(galleryIndex + 1));
+  dots.forEach((d, i) => d.addEventListener('click', () => goGallery(i)));
+
+  track.addEventListener('scroll', () => {
+    const i = Math.round(track.scrollLeft / (track.clientWidth || 1));
+    if (i !== galleryIndex && i >= 0 && i < slides.length) {
+      galleryIndex = i;
+      dots.forEach((d, n) => d.classList.toggle('active', n === galleryIndex));
+    }
+  }, { passive: true });
+}
 
 // Background Music Control
 function setMusicState(on) {
