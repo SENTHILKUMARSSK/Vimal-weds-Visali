@@ -1,0 +1,1877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, viewport-fit=cover">
+<meta name="theme-color" content="#1c120e">
+<meta name="description" content="Wedding Invitation of Vimal Shankar N &amp; Visali B — 10 December 2026, Lord Subramaniya Swamy Temple, Vallioor, Tirunelveli">
+<title>Vimal Shankar &amp; Visali — Wedding Invitation</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Great+Vibes&family=Noto+Serif+Tamil:wght@400;600;700&display=swap');
+
+:root {
+  --gold: #d6a74a;
+  --gold2: #f6d889;
+  --gold-glow: #ffeaa7;
+  --maroon: #641426;
+  --cream: #fff8eb;
+  --ink: #3a251b;
+  --safe-bottom: max(12px, env(safe-area-inset-bottom, 12px));
+  --safe-right: max(12px, env(safe-area-inset-right, 12px));
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+  max-width: 100%;
+  background: #1c120e;
+  color: var(--cream);
+  font-family: 'Cormorant Garamond', serif;
+  overflow-x: hidden;
+  position: relative;
+}
+
+button {
+  font: inherit;
+  border: none;
+  outline: none;
+}
+
+/* ========================================================
+   OPENING SCREEN & EMBLEM
+   ======================================================== */
+#opening {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  background: #080605;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 1.3s cubic-bezier(0.4, 0, 0.2, 1), visibility 1.3s;
+}
+
+.open-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  background: #080605;
+}
+
+.opening-shade {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(10, 5, 2, 0.25) 10%, rgba(10, 5, 2, 0.55) 60%, rgba(5, 2, 1, 0.88) 100%);
+}
+
+.opening-ui {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 92vw;
+  transition: opacity 0.45s ease, transform 0.45s ease;
+}
+
+.opening-monogram {
+  width: clamp(140px, 34vw, 240px);
+  height: auto;
+  filter: drop-shadow(0 0 14px rgba(255, 241, 160, 0.8)) drop-shadow(0 0 35px rgba(212, 162, 56, 0.5));
+  animation: pulseLogo 3s ease-in-out infinite alternate;
+}
+
+@keyframes pulseLogo {
+  0% { transform: scale(1); filter: drop-shadow(0 0 10px rgba(255, 241, 160, 0.7)) drop-shadow(0 0 25px rgba(212, 162, 56, 0.4)); }
+  100% { transform: scale(1.03); filter: drop-shadow(0 0 18px rgba(255, 241, 160, 0.95)) drop-shadow(0 0 40px rgba(212, 162, 56, 0.65)); }
+}
+
+.opening-couples-name {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(14px, 3.5vw, 20px);
+  letter-spacing: 0.28em;
+  color: #fff2cb;
+  text-transform: uppercase;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.8), 0 0 18px rgba(246, 216, 137, 0.5);
+  margin-top: -6px;
+}
+
+.opening-date {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 2.4vw, 13px);
+  letter-spacing: 0.24em;
+  color: #e9ca7e;
+  margin-top: -12px;
+}
+
+.open-btn {
+  border: 1px solid rgba(255, 221, 135, 0.9);
+  background: linear-gradient(135deg, #9d681b, #e9c46a, #9c651a);
+  color: #fff8df;
+  padding: 14px 34px;
+  min-width: 210px;
+  border-radius: 999px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-family: 'Cinzel', serif;
+  font-size: 13px;
+  font-weight: 600;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2) inset, 0 8px 35px rgba(0, 0, 0, 0.5), 0 0 28px rgba(225, 180, 69, 0.45);
+  cursor: pointer;
+  animation: goldPulse 2s infinite;
+  transition: transform 0.25s ease;
+}
+
+.open-btn:hover, .open-btn:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+@keyframes goldPulse {
+  50% {
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.25) inset, 0 8px 35px rgba(0, 0, 0, 0.5), 0 0 42px rgba(255, 208, 82, 0.9);
+  }
+}
+
+#dissolve {
+  position: fixed;
+  inset: 0;
+  background: #fff4db;
+  z-index: 900;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1.2s;
+}
+
+.dissolve-on {
+  opacity: 1 !important;
+}
+
+/* ========================================================
+   SECTIONS & BASE LAYOUT (HIGHLY RESPONSIVE)
+   ======================================================== */
+main {
+  position: relative;
+  width: 100%;
+}
+
+.section {
+  min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  max-width: 100vw;
+  padding: 40px 0;
+}
+
+.section:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 5, 2, 0.28), rgba(10, 5, 2, 0.65) 85%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.section:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, #1c120e 0%, transparent 8%, transparent 92%, #1c120e 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  width: min(92%, 720px);
+  text-align: center;
+  padding: clamp(50px, 9vh, 90px) 16px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s cubic-bezier(0.2, 0.8, 0.2, 1), transform 0.9s cubic-bezier(0.2, 0.8, 0.2, 1);
+  margin: auto;
+}
+
+.section.visible .content {
+  opacity: 1;
+  transform: none;
+}
+
+/* ========================================================
+   AUSPICIOUS SYMBOL "உ" (TAMIL PILLAIYAR SUZHI)
+   ======================================================== */
+.auspicious-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.auspicious-symbol {
+  font-family: 'Noto Serif Tamil', serif;
+  font-size: clamp(42px, 11vw, 64px);
+  font-weight: 700;
+  line-height: 1;
+  color: #fff1b8;
+  text-shadow: 0 0 12px rgba(255, 235, 150, 0.95), 0 0 28px rgba(212, 162, 56, 0.8), 0 4px 15px rgba(0,0,0,0.8);
+  animation: divineGlow 3s ease-in-out infinite alternate;
+  display: inline-block;
+  user-select: none;
+}
+
+@keyframes divineGlow {
+  0% {
+    filter: drop-shadow(0 0 6px rgba(255, 225, 140, 0.6));
+    transform: scale(1);
+  }
+  100% {
+    filter: drop-shadow(0 0 18px rgba(255, 215, 80, 0.95)) drop-shadow(0 0 32px rgba(220, 165, 45, 0.7));
+    transform: scale(1.04);
+  }
+}
+
+.auspicious-caption {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(9px, 2.2vw, 11px);
+  letter-spacing: 0.3em;
+  color: #ebd087;
+  text-transform: uppercase;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+}
+
+/* ========================================================
+   TYPOGRAPHY & HEADINGS
+   ======================================================== */
+.eyebrow {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: clamp(11px, 2.5vw, 13px);
+  color: #ffe3a0;
+  margin-bottom: 10px;
+}
+
+.role-heading {
+  font-family: 'Great Vibes', cursive !important;
+  text-transform: none !important;
+  letter-spacing: 0.02em !important;
+  font-size: clamp(48px, 11vw, 76px) !important;
+  line-height: 0.95;
+  color: #ffe7a0 !important;
+  text-shadow: 0 3px 20px rgba(0, 0, 0, 0.6), 0 0 22px rgba(246, 216, 137, 0.35);
+  margin-bottom: 12px !important;
+}
+
+.name {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(28px, 7vw, 54px);
+  letter-spacing: 0.05em;
+  line-height: 1.15;
+  color: #fff6d7;
+  text-shadow: 0 4px 18px #000, 0 0 25px rgba(245, 211, 126, 0.25);
+  margin: 6px 0 16px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.script {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(52px, 12vw, 98px);
+  line-height: 0.9;
+  color: #fff0bf;
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.6), 0 0 25px rgba(246, 216, 137, 0.3);
+}
+
+.relation {
+  margin-top: 14px;
+  font-size: clamp(15px, 3.6vw, 20px);
+  letter-spacing: 0.04em;
+  color: #ffe8bd;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  max-width: 90vw;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.45;
+}
+
+.orn {
+  color: var(--gold2);
+  font-size: 26px;
+  margin: 18px 0;
+  text-shadow: 0 0 12px rgba(246, 216, 137, 0.5);
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 22px;
+  z-index: 5;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: #f6dc9c;
+  opacity: 0.85;
+  animation: floatCue 2s infinite ease-in-out;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.8);
+  pointer-events: none;
+}
+
+.scroll-cue:after {
+  content: '↓';
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 2px;
+}
+
+@keyframes floatCue {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+
+/* ========================================================
+   PROFILE BADGES (EDUCATION & PROFESSION)
+   ======================================================== */
+.profile-card {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 18px;
+  margin: 14px auto 0;
+  padding: 14px 24px;
+  background: linear-gradient(145deg, rgba(35, 14, 8, 0.72), rgba(65, 24, 12, 0.65));
+  border: 1px solid rgba(246, 216, 137, 0.55);
+  border-radius: 999px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.45), inset 0 0 18px rgba(246, 216, 137, 0.1);
+  max-width: min(92vw, 540px);
+}
+
+.profile-pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.25;
+}
+
+.profile-label {
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.24em;
+  color: #eec873;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-val {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(17px, 4.2vw, 22px);
+  font-weight: 600;
+  color: #fff6e0;
+  letter-spacing: 0.02em;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.profile-dot {
+  color: #e5b85a;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    border-radius: 20px;
+    padding: 12px 16px;
+    gap: 8px 14px;
+  }
+}
+
+/* ========================================================
+   SPECIAL HIGHLIGHT SECTION: MATHEMATICS QUOTE
+   "mathematics pudikatha payanuku....mathematics pudicha ponnu ❤️"
+   ======================================================== */
+#story-highlight {
+  background-image: linear-gradient(rgba(24, 9, 5, 0.78), rgba(24, 9, 5, 0.78)), url('images/03-thali-moment.png');
+}
+
+.story-card {
+  width: min(92vw, 640px);
+  margin: 0 auto;
+  padding: clamp(30px, 6vw, 44px) clamp(20px, 5vw, 36px);
+  border: 1.5px solid rgba(245, 211, 126, 0.85);
+  border-radius: 30px;
+  background: linear-gradient(155deg, rgba(35, 13, 7, 0.85), rgba(72, 26, 13, 0.78));
+  box-shadow: 0 24px 75px rgba(0,0,0,0.6), 0 0 35px rgba(224, 177, 65, 0.22), inset 0 0 45px rgba(246, 216, 137, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.story-card::before {
+  content: "";
+  position: absolute;
+  inset: 6px;
+  border: 1px dashed rgba(245, 211, 126, 0.35);
+  border-radius: 24px;
+  pointer-events: none;
+}
+
+.story-kicker {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 2.5vw, 12px);
+  letter-spacing: 0.34em;
+  color: #f7dc9c;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.story-math-symbols {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: clamp(18px, 4.5vw, 24px);
+  color: #f0c96c;
+  margin-bottom: 16px;
+  text-shadow: 0 0 10px rgba(240, 201, 108, 0.5);
+}
+
+.story-quote {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(23px, 5.6vw, 38px);
+  line-height: 1.38;
+  font-weight: 600;
+  font-style: italic;
+  color: #fff7e4;
+  text-shadow: 0 3px 16px rgba(0,0,0,0.7), 0 0 24px rgba(245, 211, 126, 0.35);
+  margin: 12px 0 18px;
+  padding: 0 4px;
+  word-break: break-word;
+  overflow-wrap: break-word;
+}
+
+.story-punch {
+  color: #ffd885;
+  font-weight: 700;
+  display: inline;
+  text-shadow: 0 0 20px rgba(255, 216, 133, 0.7);
+}
+
+.heart-pulse {
+  display: inline-block;
+  color: #ff4766;
+  animation: heartBeat 1.4s infinite ease-in-out;
+  filter: drop-shadow(0 0 10px rgba(255, 71, 102, 0.75));
+  font-style: normal;
+}
+
+@keyframes heartBeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.24); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.18); }
+  70% { transform: scale(1); }
+}
+
+.story-divider {
+  width: 140px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f6d889, transparent);
+  margin: 20px auto;
+}
+
+.story-couple {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(36px, 8vw, 54px);
+  color: #ffe8ab;
+  line-height: 1;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+}
+
+.story-sub {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(9px, 2.2vw, 11px);
+  letter-spacing: 0.18em;
+  color: #e5c77a;
+  margin-top: 8px;
+  line-height: 1.45;
+  text-transform: uppercase;
+}
+
+/* ========================================================
+   SCRATCH CARD SECTION (SAVE THE DATE)
+   ======================================================== */
+#scratch {
+  background-image: url('images/03-thali-moment.png');
+}
+
+.scratch-card {
+  width: min(84vw, 360px);
+  height: 235px;
+  margin: 24px auto 0;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1.5px solid rgba(255, 220, 128, 0.85);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.5), 0 0 30px rgba(224, 177, 65, 0.2);
+  touch-action: none;
+}
+
+.scratch-under {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, #fff6b4 0%, #dcb449 60%, #b88628 100%);
+  color: #5b3111;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  text-align: center;
+  user-select: none;
+}
+
+.scratch-kicker {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.26em;
+  color: #6b3e12;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.scratch-under .date {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(21px, 5.5vw, 25px);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #4b2509;
+}
+
+.scratch-under .day {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(16px, 4vw, 20px);
+  letter-spacing: 0.18em;
+  margin-top: 6px;
+  color: #613410;
+  font-weight: 600;
+}
+
+.scratch-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  touch-action: none;
+}
+
+.scratch-canvas:active {
+  cursor: grabbing;
+}
+
+.scratch-hint {
+  font-size: 14px;
+  letter-spacing: 0.06em;
+  margin-top: 15px;
+  color: #ffe9ad;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+  transition: opacity 0.4s ease;
+}
+
+.revealed .scratch-hint {
+  opacity: 0.75;
+}
+
+.burst {
+  position: absolute;
+  inset: 0;
+  z-index: 4;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particle {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  font-size: 20px;
+  animation: burst 1.8s ease-out forwards;
+}
+
+.particle.rice {
+  font-size: 13px;
+  color: #ffe37d;
+}
+
+.particle.flower {
+  font-size: 24px;
+  color: #ffdd3f;
+}
+
+@keyframes burst {
+  0% { transform: translate(-50%, -50%) scale(0.2) rotate(0); opacity: 0; }
+  12% { opacity: 1; }
+  100% { transform: translate(calc(-50% + var(--x)), calc(-50% + var(--y))) scale(1) rotate(360deg); opacity: 0; }
+}
+
+/* ========================================================
+   EDITORIAL EVENT CARDS (#map1 & #dinner)
+   ======================================================== */
+#map1 {
+  background-image: url('images/04-temple-kulam.png');
+}
+
+#dinner {
+  background-image: url('images/05-dinner-stage.png');
+}
+
+.editorial-card {
+  width: min(92vw, 560px);
+  margin: 0 auto;
+  padding: clamp(28px, 6vw, 36px) clamp(18px, 5vw, 28px);
+  border: 1px solid rgba(245, 211, 126, 0.72);
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(24, 9, 5, 0.72), rgba(66, 24, 12, 0.58));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.55), inset 0 0 40px rgba(246, 216, 137, 0.05);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  text-align: center;
+}
+
+.event-kicker {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.32em;
+  color: #f6d889;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.event-date {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(52px, 12vw, 76px);
+  line-height: 0.9;
+  color: #ffe7a0;
+  text-shadow: 0 4px 18px rgba(0, 0, 0, 0.5);
+}
+
+.event-date span {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(15px, 3.8vw, 21px);
+  letter-spacing: 0.26em;
+  margin: 6px 0 2px;
+  color: #fff0c6;
+}
+
+.event-day {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.32em;
+  color: #f2d27f;
+  margin-top: 8px;
+}
+
+.gold-rule {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f6d889, transparent);
+  margin: 22px auto;
+}
+
+.event-row {
+  display: flex;
+  align-items: flex-start;
+  text-align: left;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(245, 211, 126, 0.18);
+}
+
+.event-row:last-of-type {
+  border-bottom: 0;
+}
+
+.event-row .event-icon {
+  flex: 0 0 36px;
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(246, 216, 137, 0.65);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #f7d985;
+  font-size: 16px;
+  margin-top: 2px;
+  background: rgba(45, 18, 9, 0.5);
+}
+
+.event-row b {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: 9px;
+  letter-spacing: 0.22em;
+  color: #e9ca7d;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.event-row strong {
+  display: block;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(14px, 3.4vw, 16px);
+  line-height: 1.35;
+  color: #fff3d0;
+}
+
+.event-row p {
+  margin: 6px 0 0;
+  font-size: clamp(14px, 3.2vw, 16px);
+  line-height: 1.4;
+  color: #ffe8bd;
+}
+
+.map-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #f4d27f;
+  background: linear-gradient(135deg, rgba(117, 50, 19, 0.92), rgba(70, 26, 12, 0.96));
+  color: #fff4d2;
+  border-radius: 999px;
+  padding: 13px 26px;
+  text-decoration: none;
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  text-transform: uppercase;
+  box-shadow: 0 0 24px rgba(236, 190, 73, 0.25);
+  margin-top: 20px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.map-btn:hover, .map-btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 0 32px rgba(236, 190, 73, 0.45);
+}
+
+.map-symbol {
+  font-size: 16px;
+}
+
+/* ========================================================
+   GALLERY CAROUSEL
+   ======================================================== */
+#gallery {
+  background-image: linear-gradient(rgba(30, 10, 3, 0.35), rgba(30, 10, 3, 0.7)), url('images/06-temple-book.png');
+}
+
+#gallery .content {
+  width: min(96vw, 760px);
+}
+
+.gallery-wrap {
+  position: relative;
+  width: min(94vw, 620px);
+  margin: 24px auto 0;
+}
+
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  gap: 0;
+  border-radius: 20px;
+  touch-action: pan-y;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+  align-items: center;
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.gallery-slide {
+  flex: 0 0 100%;
+  scroll-snap-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min(65svh, 600px);
+  padding: 0 clamp(10px, 3vw, 24px);
+}
+
+.gallery-slide img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 220, 140, 0.6);
+  box-shadow: 0 14px 42px rgba(0, 0, 0, 0.55);
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.gallery-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  inset: 50% 0 auto 0;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.gallery-arrow {
+  pointer-events: auto;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 225, 156, 0.75);
+  background: rgba(35, 14, 8, 0.75);
+  color: #ffe7a8;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.gallery-arrow:hover {
+  transform: scale(1.08);
+}
+
+.gallery-dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.gallery-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1px solid #f1d27d;
+  background: transparent;
+  padding: 0;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-dot.active {
+  background: #f1d27d;
+  box-shadow: 0 0 12px rgba(241, 210, 125, 0.75);
+  transform: scale(1.2);
+}
+
+.swipe-hint {
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  color: #ffe4a6;
+  margin-top: 12px;
+  opacity: 0.8;
+}
+
+/* ========================================================
+   HEARTFELT MESSAGE SECTION
+   ======================================================== */
+#message {
+  background-image: url('images/06-temple-book.png');
+}
+
+.panel {
+  background: rgba(37, 17, 10, 0.5);
+  border: 1px solid rgba(245, 210, 127, 0.45);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  padding: clamp(28px, 6vw, 42px) clamp(18px, 5vw, 32px);
+  border-radius: 26px;
+  max-width: min(92vw, 640px);
+  margin: 0 auto;
+}
+
+.guest-message {
+  font-size: clamp(24px, 5.5vw, 38px);
+  line-height: 1.32;
+  font-style: italic;
+  color: #fff0c7;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.6);
+}
+
+/* ========================================================
+   COUNTDOWN SECTION
+   ======================================================== */
+#countdown {
+  background-image: linear-gradient(180deg, rgba(30, 10, 3, 0.28), rgba(30, 10, 3, 0.68)), url('images/04-temple-kulam.png');
+}
+
+.countdown-content {
+  width: 100%;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.countdown-sub {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(10px, 2.5vw, 12px);
+  letter-spacing: 0.24em;
+  color: #f7dda1;
+  margin: 18px 0;
+  text-transform: uppercase;
+}
+
+.countdown-box {
+  width: min(94vw, 560px);
+  margin: 22px auto 20px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 16px 10px;
+  border: 1px solid rgba(248, 219, 143, 0.62);
+  border-radius: 22px;
+  background: rgba(35, 14, 7, 0.65);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  box-shadow: 0 14px 45px rgba(0, 0, 0, 0.4);
+}
+
+.count-unit {
+  min-width: clamp(54px, 15vw, 76px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.count-unit strong {
+  font-family: 'Cinzel', serif;
+  font-size: clamp(26px, 7vw, 42px);
+  color: #fff1bd;
+  line-height: 1;
+}
+
+.count-unit span {
+  font-family: 'Cinzel', serif;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #e6c776;
+  margin-top: 8px;
+}
+
+.count-sep {
+  font-family: 'Cinzel', serif;
+  font-size: 26px;
+  color: #f1d487;
+  display: flex;
+  align-items: center;
+  opacity: 0.8;
+}
+
+.countdown-art {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  margin: 14px auto 0;
+  min-height: 280px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.countdown-frame {
+  width: min(88vw, 430px);
+  padding: 0;
+  border: 2px solid rgba(238, 202, 111, 0.98);
+  border-radius: 26px;
+  overflow: hidden;
+  background: none;
+  box-shadow: 0 0 28px rgba(224, 177, 65, 0.25);
+}
+
+.countdown-frame .countdown-couple {
+  width: 100%;
+  max-height: 48svh;
+  border-radius: 24px;
+  display: block;
+  object-fit: contain;
+}
+
+/* ========================================================
+   FOOTER
+   ======================================================== */
+#footer {
+  position: relative;
+  background: #170b07;
+  text-align: center;
+  padding: 80px 20px 120px;
+  color: #ffe8bd;
+  overflow: hidden;
+  border-top: 1px solid rgba(246, 216, 137, 0.2);
+}
+
+#footer .footer-line {
+  font-family: 'Great Vibes', cursive;
+  font-size: clamp(42px, 9vw, 68px);
+  color: #f6d889;
+  text-shadow: 0 3px 18px rgba(0, 0, 0, 0.5);
+}
+
+#footer .footer-copy {
+  max-width: 650px;
+  margin: 12px auto 26px;
+  font-size: clamp(18px, 4vw, 22px);
+  line-height: 1.45;
+  color: #fff0cf;
+}
+
+#footer .made {
+  font-family: 'Cinzel', serif;
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #e9c977;
+  margin-bottom: 14px;
+}
+
+.insta-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  border: 1px solid rgba(245, 211, 126, 0.7);
+  border-radius: 999px;
+  color: #fff0c7;
+  text-decoration: none;
+  background: rgba(84, 34, 17, 0.42);
+  box-shadow: 0 0 20px rgba(222, 178, 68, 0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  font-family: 'Cinzel', serif;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+}
+
+.insta-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 28px rgba(222, 178, 68, 0.3);
+}
+
+.insta-svg {
+  width: 22px;
+  height: 22px;
+  color: #f6d889;
+  flex: none;
+}
+
+/* ========================================================
+   MUSIC CONTROLLER (RESPONSIVE & SAFE AREA POSITIONING)
+   ======================================================== */
+#music-control {
+  position: fixed !important;
+  right: var(--safe-right) !important;
+  bottom: var(--safe-bottom) !important;
+  left: auto !important;
+  transform: none !important;
+  width: 178px !important;
+  height: 108px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: none !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  display: block !important;
+  z-index: 1000 !important;
+  overflow: visible !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+  transition: opacity 0.45s ease, visibility 0.45s ease;
+  cursor: pointer;
+}
+
+body.invitation-open #music-control {
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+}
+
+#music-control .music-art {
+  position: absolute !important;
+  left: 50% !important;
+  top: 0 !important;
+  bottom: auto !important;
+  transform: translateX(-50%) !important;
+  width: 78px !important;
+  height: 84px !important;
+  z-index: 2 !important;
+  pointer-events: none !important;
+}
+
+#music-control .music-art img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  filter: drop-shadow(0 5px 8px rgba(0, 0, 0, 0.45)) !important;
+}
+
+#music-control .music-pill {
+  position: absolute !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 142px !important;
+  height: 38px !important;
+  box-sizing: border-box !important;
+  padding: 0 10px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 6px !important;
+  border-radius: 999px !important;
+  border: 1px solid rgba(238, 202, 111, 0.88) !important;
+  background: linear-gradient(135deg, rgba(46, 18, 10, 0.97), rgba(84, 34, 17, 0.95)) !important;
+  color: #fff0c6 !important;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.5), 0 0 20px rgba(224, 177, 65, 0.2) !important;
+  font-family: 'Cinzel', serif !important;
+  letter-spacing: 0.14em !important;
+  font-size: 9px !important;
+  z-index: 5 !important;
+}
+
+#music-control .music-icon {
+  font-size: 14px !important;
+}
+
+#music-control .music-state {
+  font-size: 7px !important;
+  letter-spacing: 0.12em !important;
+  opacity: 0.85 !important;
+}
+
+#music-control.music-disabled .music-pill {
+  opacity: 0.82;
+  border-color: rgba(238, 202, 111, 0.45);
+}
+
+@media (max-width: 600px) {
+  #music-control {
+    width: 165px !important;
+    height: 100px !important;
+  }
+  #music-control .music-art {
+    width: 70px !important;
+    height: 76px !important;
+  }
+  #music-control .music-pill {
+    width: 134px !important;
+    height: 35px !important;
+    font-size: 8px !important;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- OPENING OVERLAY -->
+<div id="opening">
+  <video class="open-video" id="introVideo" playsinline="" webkit-playsinline="" preload="auto" muted="" poster="images/opening-poster.jpg" aria-hidden="true">
+    <source src="media/opening.mp4" type="video/mp4">
+  </video>
+  <div class="opening-shade"></div>
+  <div class="opening-ui" id="openingUI">
+    
+    <!-- Royal Monogram Crest for Vimal Shankar & Visali with Auspicious "உ" -->
+    <svg class="opening-monogram" viewBox="0 0 280 280" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Vimal Shankar and Visali Monogram">
+      <defs>
+        <linearGradient id="goldLinear" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#fff4c2" />
+          <stop offset="35%" stop-color="#f5d076" />
+          <stop offset="70%" stop-color="#cf9833" />
+          <stop offset="100%" stop-color="#f8df93" />
+        </linearGradient>
+        <filter id="glowFilter" x="-20%" y="-20%" width="140%" height="140%">
+          <feGaussianBlur stdDeviation="3" result="blur" />
+          <feComposite in="SourceGraphic" in2="blur" operator="over" />
+        </filter>
+      </defs>
+      
+      <!-- Outer Decorative Gold Rings -->
+      <circle cx="140" cy="140" r="128" stroke="url(#goldLinear)" stroke-width="1.5" stroke-dasharray="3 4" opacity="0.65" />
+      <circle cx="140" cy="140" r="122" stroke="url(#goldLinear)" stroke-width="2.5" />
+      <circle cx="140" cy="140" r="114" stroke="url(#goldLinear)" stroke-width="0.8" opacity="0.8" />
+      
+      <!-- Top Auspicious "உ" -->
+      <g filter="url(#glowFilter)">
+        <text x="140" y="58" font-family="'Noto Serif Tamil', serif" font-size="34" font-weight="700" fill="url(#goldLinear)" text-anchor="middle">உ</text>
+      </g>
+      
+      <!-- Decorative Laurel Branch Elements -->
+      <path d="M 60 140 C 60 185, 95 220, 140 226 C 185 220, 220 185, 220 140" stroke="url(#goldLinear)" stroke-width="1.8" stroke-linecap="round" fill="none" opacity="0.85" />
+      
+      <!-- Center Interlocking Monogram: V & V -->
+      <g filter="url(#glowFilter)">
+        <!-- First V (Left) -->
+        <text x="108" y="162" font-family="'Cinzel', serif" font-size="78" font-weight="600" fill="url(#goldLinear)" text-anchor="middle">V</text>
+        <!-- Heart / Ampersand connector -->
+        <text x="140" y="148" font-family="'Great Vibes', cursive" font-size="38" fill="#ffd573" text-anchor="middle">&amp;</text>
+        <!-- Second V (Right) -->
+        <text x="172" y="162" font-family="'Cinzel', serif" font-size="78" font-weight="600" fill="url(#goldLinear)" text-anchor="middle">V</text>
+      </g>
+      
+      <!-- Bottom Date Banner -->
+      <text x="140" y="196" font-family="'Cinzel', serif" font-size="9" letter-spacing="3" fill="#ffefa8" text-anchor="middle">10 • 12 • 2026</text>
+      <circle cx="140" cy="226" r="3" fill="url(#goldLinear)" />
+    </svg>
+
+    <div class="opening-couples-name">Vimal Shankar &amp; Visali</div>
+    <div class="opening-date">DECEMBER 10, 2026</div>
+
+    <button class="open-btn" id="openBtn">Open Invitation</button>
+  </div>
+</div>
+
+<div id="dissolve"></div>
+
+<main>
+  <!-- ==========================================
+       SECTION 1: GROOM WITH AUSPICIOUS "உ" AT TOP
+       ========================================== -->
+  <section class="section visible" id="groom" style="background-image:url('images/01-groom-vesti.png')">
+    <div class="content">
+      
+      <!-- Prominent Tamil Divine Inscription "உ" at starting of invitation -->
+      <div class="auspicious-wrap" aria-label="Auspicious Pillaiyar Suzhi">
+        <span class="auspicious-symbol">உ</span>
+        <span class="auspicious-caption">✦ விநாயகர் துணை ✦</span>
+      </div>
+
+      <div class="eyebrow role-heading">Groom</div>
+      <div class="name">Vimal Shankar N</div>
+      
+      <!-- Groom Profile: Education & Profession -->
+      <div class="profile-card">
+        <div class="profile-pill">
+          <span class="profile-label">🎓 EDUCATION</span>
+          <span class="profile-val">Engineering</span>
+        </div>
+        <div class="profile-dot">•</div>
+        <div class="profile-pill">
+          <span class="profile-label">💼 PROFESSION</span>
+          <span class="profile-val">Digital Marketer</span>
+        </div>
+      </div>
+
+      <div class="relation">Welcoming you with love and the sacred blessings of our family</div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">SCROLL TO EXPLORE</div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 2: BRIDE
+       ========================================== -->
+  <section class="section" id="bride" style="background-image:url('images/02-bride-saree.png')">
+    <div class="content">
+      <div class="eyebrow role-heading">Bride</div>
+      <div class="name">Visali B</div>
+      
+      <!-- Bride Profile: Education & Profession -->
+      <div class="profile-card">
+        <div class="profile-pill">
+          <span class="profile-label">🎓 EDUCATION</span>
+          <span class="profile-val">Ph.D. in Mathematics</span>
+        </div>
+        <div class="profile-dot">•</div>
+        <div class="profile-pill">
+          <span class="profile-label">👩‍🏫 PROFESSION</span>
+          <span class="profile-val">Professor</span>
+        </div>
+      </div>
+
+      <div class="relation">Welcoming you with love and the sacred blessings of our family</div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SPECIAL HIGHLIGHT: AFTER COUPLES NAME
+       "mathematics pudikatha payanuku....mathematics pudicha ponnu ❤️"
+       ========================================== -->
+  <section class="section" id="story-highlight">
+    <div class="content">
+      <div class="story-card">
+        <div class="story-kicker">✦ THE PERFECT EQUATION OF LOVE ✦</div>
+        
+        <div class="story-math-symbols">
+          <span>∞</span>
+          <span>+</span>
+          <span class="heart-pulse">❤️</span>
+          <span>=</span>
+          <span>✨</span>
+        </div>
+
+        <div class="story-quote">
+          “mathematics pudikatha payanuku....<br>
+          <span class="story-punch">mathematics pudicha ponnu <span class="heart-pulse">❤️</span></span>”
+        </div>
+
+        <div class="story-divider"></div>
+        <div class="story-couple">Vimal Shankar &amp; Visali</div>
+        <div class="story-sub">Engineering &amp; Digital Marketer &nbsp;✦&nbsp; Ph.D. in Mathematics &amp; Professor</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 3: SAVE THE DATE (SCRATCH CARD)
+       ========================================== -->
+  <section class="section" id="scratch">
+    <div class="content">
+      <div class="script">Save the Date</div>
+      <div class="scratch-card" id="scratchCard">
+        <div class="scratch-under">
+          <div class="scratch-kicker">OUR WEDDING</div>
+          <div class="date">10 DECEMBER 2026</div>
+          <div class="day">THURSDAY</div>
+        </div>
+        <canvas class="scratch-canvas" id="scratchCanvas" width="360" height="235" style="width: 360px; height: 235px;"></canvas>
+      </div>
+      <div class="scratch-hint">Scratch to reveal ✨</div>
+      <div class="burst" id="burst"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 4: THE WEDDING (MUHURTHAM)
+       ========================================== -->
+  <section class="section" id="map1">
+    <div class="content">
+      <div class="event-card editorial-card">
+        <div class="event-kicker">THE WEDDING MUHURTHAM</div>
+        <div class="event-date">10 <span>DECEMBER</span> 2026</div>
+        <div class="event-day">THURSDAY</div>
+        <div class="gold-rule"></div>
+        
+        <div class="event-row">
+          <span class="event-icon">◷</span>
+          <div>
+            <b>MUHURTHAM TIME</b>
+            <strong>10:30 AM – 12:30 PM</strong>
+          </div>
+        </div>
+        
+        <div class="event-row">
+          <span class="event-icon">🛕</span>
+          <div>
+            <b>SACRED TEMPLE SANCTUM</b>
+            <strong>Lord Subramaniya Swamy Temple</strong>
+            <p>Divine Blessings for the Holy Matrimony</p>
+          </div>
+        </div>
+
+        <div class="event-row">
+          <span class="event-icon">⌖</span>
+          <div>
+            <b>LOCATION</b>
+            <strong>Vallioor, Tirunelveli District</strong>
+            <p>Tamil Nadu, India</p>
+          </div>
+        </div>
+
+        <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Lord+Subramaniya+Swamy+Temple%2C+Vallioor%2C+Tirunelveli+District%2C+Tamil+Nadu">
+          <span class="map-symbol">⌖</span> Open Map
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 5: WEDDING FEAST & RECEPTION
+       ========================================== -->
+  <section class="section" id="dinner">
+    <div class="content">
+      <div class="event-card editorial-card dinner-card">
+        <div class="event-kicker">WEDDING FEAST &amp; RECEPTION</div>
+        <div class="event-date">10 <span>DECEMBER</span> 2026</div>
+        <div class="event-day">THURSDAY</div>
+        <div class="gold-rule"></div>
+        
+        <div class="event-row">
+          <span class="event-icon">◷</span>
+          <div>
+            <b>TIMING</b>
+            <strong>Feast: 12:30 PM Onwards • Reception: Evening</strong>
+          </div>
+        </div>
+        
+        <div class="event-row">
+          <span class="event-icon">⌖</span>
+          <div>
+            <b>VENUE</b>
+            <strong>Subramaniya Swamy Temple Kalyana Mandapam</strong>
+            <p>Vallioor, Tirunelveli District, Tamil Nadu</p>
+          </div>
+        </div>
+
+        <a class="map-btn" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Lord+Subramaniya+Swamy+Temple%2C+Vallioor%2C+Tirunelveli+District%2C+Tamil+Nadu">
+          <span class="map-symbol">⌖</span> Open Map
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 6: OUR GALLERY
+       ========================================== -->
+  <section class="section" id="gallery">
+    <div class="content">
+      <div class="script">Our Gallery</div>
+      <div class="gallery-wrap">
+        <div class="gallery" id="galleryTrack">
+          <div class="gallery-slide"><img src="images/gallery-01.png" alt="Vimal Shankar and Visali"></div>
+          <div class="gallery-slide"><img src="images/gallery-02.png" alt="Vimal Shankar and Visali"></div>
+          <div class="gallery-slide"><img src="images/gallery-03.png" alt="Vimal Shankar and Visali"></div>
+          <div class="gallery-slide"><img src="images/gallery-04.png" alt="Vimal Shankar and Visali"></div>
+        </div>
+        <div class="gallery-nav">
+          <button class="gallery-arrow" id="prevGallery" aria-label="Previous photo">‹</button>
+          <button class="gallery-arrow" id="nextGallery" aria-label="Next photo">›</button>
+        </div>
+        <div class="gallery-dots" id="galleryDots">
+          <button class="gallery-dot active" aria-label="Photo 1"></button>
+          <button class="gallery-dot" aria-label="Photo 2"></button>
+          <button class="gallery-dot" aria-label="Photo 3"></button>
+          <button class="gallery-dot" aria-label="Photo 4"></button>
+        </div>
+        <div class="swipe-hint">SWIPE LEFT OR RIGHT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 7: A MESSAGE FOR YOU
+       ========================================== -->
+  <section class="section" id="message">
+    <div class="content">
+      <div class="panel">
+        <div class="eyebrow">From our hearts</div>
+        <div class="script">A Message for You</div>
+        <div class="orn">❦</div>
+        <div class="guest-message">“Your presence, blessings and love will make our celebration truly complete.”</div>
+        <div class="orn">❦</div>
+        <div class="name" style="font-size: clamp(24px, 5.5vw, 36px);">Vimal Shankar &amp; Visali</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SECTION 8: COUNTDOWN
+       ========================================== -->
+  <section class="section" id="countdown">
+    <div class="content countdown-content">
+      <div class="script">The Big Day</div>
+      <div class="countdown-sub">COUNTING DOWN TO VIMAL SHANKAR &amp; VISALI</div>
+      <div class="countdown-box">
+        <div class="count-unit"><strong id="cdDays">00</strong><span>DAYS</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><strong id="cdHours">00</strong><span>HOURS</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><strong id="cdMinutes">00</strong><span>MIN</span></div>
+        <div class="count-sep">:</div>
+        <div class="count-unit"><strong id="cdSeconds">00</strong><span>SEC</span></div>
+      </div>
+      <div class="countdown-art">
+        <div class="countdown-frame">
+          <img src="images/countdown-couple.png" alt="Couple portrait" class="countdown-couple">
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="footer-line">See you there</div>
+  <div class="footer-copy">With love, laughter, and a beautiful beginning to forever.</div>
+  <div class="made">Vimal Shankar &amp; Visali</div>
+  <a class="insta-link" href="https://www.instagram.com/craft_and_celebrate/" target="_blank" rel="noopener noreferrer" aria-label="Open Craft and Celebrate on Instagram">
+    <svg class="insta-svg" viewBox="0 0 24 24" aria-hidden="true">
+      <rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"></rect>
+      <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"></circle>
+      <circle cx="17.4" cy="6.7" r="1.1" fill="currentColor"></circle>
+    </svg>
+    <span>@craft_and_celebrate</span>
+  </a>
+</footer>
+
+<!-- AUDIO & MUSIC TOGGLE -->
+<audio id="bgMusic" preload="auto" loop>
+  <source src="media/Naane-varugiren.mp3" type="audio/mpeg">
+</audio>
+
+<button id="music-control" class="music-disabled" aria-label="Turn background music on or off">
+  <span class="music-art"><img src="images/music-couple-new.png" alt=""></span>
+  <span class="music-pill">
+    <span class="music-icon">♫</span>
+    <span id="musicText">MUSIC</span>
+    <span class="music-state" id="musicState">OFF</span>
+  </span>
+</button>
+
+<script>
+// Elements
+const opening = document.getElementById('opening');
+const ui = document.getElementById('openingUI');
+const video = document.getElementById('introVideo');
+const btn = document.getElementById('openBtn');
+const dissolve = document.getElementById('dissolve');
+const bgMusic = document.getElementById('bgMusic');
+const musicControl = document.getElementById('music-control');
+const musicState = document.getElementById('musicState');
+let opened = false, finished = false, musicStarted = false;
+
+// Prepare opening video
+video.muted = true;
+video.volume = 0;
+video.currentTime = 0;
+video.pause();
+
+function finishOpening() {
+  if (!opened || finished) return;
+  finished = true;
+  dissolve.classList.add('dissolve-on');
+  setTimeout(() => {
+    opening.style.opacity = '0';
+    opening.style.visibility = 'hidden';
+    opening.style.pointerEvents = 'none';
+    document.body.classList.add('invitation-open');
+    window.scrollTo({ top: 0, behavior: 'auto' });
+    setTimeout(() => dissolve.classList.remove('dissolve-on'), 1200);
+  }, 850);
+}
+
+async function startMusic() {
+  if (musicStarted) return;
+  musicStarted = true;
+  bgMusic.currentTime = 0;
+  try {
+    await bgMusic.play();
+    musicState.textContent = 'ON';
+    musicControl.classList.remove('music-disabled');
+  } catch (e) {
+    musicStarted = false;
+    musicState.textContent = 'OFF';
+    musicControl.classList.add('music-disabled');
+  }
+}
+
+btn.addEventListener('click', async () => {
+  if (opened) return;
+  opened = true;
+  ui.style.opacity = '0';
+  ui.style.transform = 'scale(0.96)';
+  video.currentTime = 0;
+  video.muted = true;
+  video.volume = 0;
+  
+  // Start background music immediately from user click gesture
+  await startMusic();
+  
+  // Failsafe timer so user is never stuck if video is blocked on mobile
+  const failSafe = setTimeout(finishOpening, 4000);
+  
+  try {
+    await video.play();
+  } catch (e) {
+    clearTimeout(failSafe);
+    finishOpening();
+  }
+});
+
+let transitionTriggered = false;
+video.addEventListener('timeupdate', () => {
+  if (opened && !transitionTriggered && Number.isFinite(video.duration) && video.duration > 0 && video.currentTime >= video.duration - 1) {
+    transitionTriggered = true;
+    finishOpening();
+  }
+});
+video.addEventListener('ended', finishOpening);
+video.addEventListener('error', () => { if (opened) finishOpening(); });
+
+// Smooth section appearance on scroll
+const observer = new IntersectionObserver(
+  entries => entries.forEach(e => {
+    if (e.isIntersecting) e.target.classList.add('visible');
+  }),
+  { threshold: 0.15 }
+);
+document.querySelectorAll('.section').forEach(s => observer.observe(s));
+
+// Ambient floating flower petals (optimized for mobile performance)
+const flowerChars = ['✿', '❀', '✽', '✾', '❁'];
+function spawnPetal() {
+  if (document.hidden) return;
+  const p = document.createElement('span');
+  p.textContent = flowerChars[Math.floor(Math.random() * flowerChars.length)];
+  p.style.position = 'fixed';
+  p.style.zIndex = '2';
+  p.style.pointerEvents = 'none';
+  p.style.left = Math.random() * 100 + 'vw';
+  p.style.top = '-30px';
+  p.style.color = ['#f4b5b5', '#ffd77b', '#fff0cc', '#e76a7a'][Math.floor(Math.random() * 4)];
+  p.style.fontSize = (12 + Math.random() * 14) + 'px';
+  p.style.opacity = 0.35 + Math.random() * 0.5;
+  document.body.appendChild(p);
+
+  const dur = 7 + Math.random() * 7;
+  const drift = (Math.random() - 0.5) * 200;
+  const rot = 360 + Math.random() * 540;
+
+  p.animate([
+    { transform: 'translate3d(0, 0, 0) rotate(0deg)' },
+    { transform: `translate3d(${drift}px, 110vh, 0) rotate(${rot}deg)` }
+  ], {
+    duration: dur * 1000,
+    easing: 'linear'
+  }).onfinish = () => p.remove();
+}
+setInterval(spawnPetal, 450);
+for (let i = 0; i < 8; i++) setTimeout(spawnPetal, i * 150);
+
+// Interactive Scratch Card
+const card = document.getElementById('scratchCard');
+const canvas = document.getElementById('scratchCanvas');
+const ctx = canvas.getContext('2d');
+const hint = document.querySelector('.scratch-hint');
+const burst = document.getElementById('burst');
+let strokes = 0, drawing = false, revealed = false;
+let startX = 0, startY = 0, lastX = 0, lastY = 0, moved = 0;
+
+function sizeCanvas() {
+  if (revealed) return;
+  const r = card.getBoundingClientRect();
+  const d = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = r.width * d;
+  canvas.height = r.height * d;
+  canvas.style.width = r.width + 'px';
+  canvas.style.height = r.height + 'px';
+  ctx.setTransform(d, 0, 0, d, 0, 0);
+  ctx.globalCompositeOperation = 'source-over';
+
+  const g = ctx.createLinearGradient(0, 0, r.width, r.height);
+  g.addColorStop(0, '#8b5a22');
+  g.addColorStop(0.5, '#e5c15e');
+  g.addColorStop(1, '#9b6827');
+  ctx.fillStyle = g;
+  ctx.fillRect(0, 0, r.width, r.height);
+
+  ctx.fillStyle = 'rgba(255, 246, 203, 0.88)';
+  ctx.font = '600 16px Cinzel, serif';
+  ctx.textAlign = 'center';
+  ctx.fillText('SCRATCH HERE', r.width / 2, r.height / 2 + 5);
+  ctx.globalCompositeOperation = 'destination-out';
+}
+sizeCanvas();
+window.addEventListener('resize', sizeCanvas);
+
+function pos(ev) {
+  const r = canvas.getBoundingClientRect();
+  return { x: ev.clientX - r.left, y: ev.clientY - r.top };
+}
+
+function scratch(ev) {
+  if (!drawing || revealed) return;
+  ev.preventDefault();
+  const q = pos(ev);
+  const dx = q.x - lastX, dy = q.y - lastY;
+  moved += Math.hypot(dx, dy);
+
+  ctx.beginPath();
+  ctx.moveTo(lastX, lastY);
+  ctx.lineTo(q.x, q.y);
+  ctx.lineWidth = 44;
+  ctx.lineCap = 'round';
+  ctx.stroke();
+
+  ctx.beginPath();
+  ctx.arc(q.x, q.y, 22, 0, Math.PI * 2);
+  ctx.fill();
+  lastX = q.x;
+  lastY = q.y;
+}
+
+function startScratch(ev) {
+  if (revealed) return;
+  ev.preventDefault();
+  drawing = true;
+  moved = 0;
+  const q = pos(ev);
+  startX = lastX = q.x;
+  startY = lastY = q.y;
+  scratch(ev);
+  try { canvas.setPointerCapture(ev.pointerId); } catch (e) {}
+}
+
+function stopScratch(ev) {
+  if (!drawing) return;
+  drawing = false;
+  const distance = Math.hypot(lastX - startX, lastY - startY);
+  if (Math.max(distance, moved) >= 50) {
+    strokes++;
+    hint.textContent = strokes < 2 ? 'Scratch again • 1 swipe left' : 'Revealing…';
+    if (strokes >= 2) revealCard();
+  }
+  try { canvas.releasePointerCapture(ev.pointerId); } catch (e) {}
+}
+
+canvas.addEventListener('pointerdown', startScratch);
+canvas.addEventListener('pointermove', scratch);
+canvas.addEventListener('pointerup', stopScratch);
+canvas.addEventListener('pointercancel', stopScratch);
+
+function revealCard() {
+  if (revealed) return;
+  revealed = true;
+  card.classList.add('revealed');
+  canvas.style.transition = 'opacity 0.7s ease';
+  canvas.style.opacity = '0';
+  canvas.style.pointerEvents = 'none';
+  hint.textContent = 'Revealed with love ✨';
+
+  // Confetti celebration burst
+  for (let i = 0; i < 75; i++) {
+    const q = document.createElement('span');
+    q.className = 'particle ' + (i % 3 ? 'flower' : 'rice');
+    q.textContent = i % 3 ? '✿' : '•';
+    q.style.setProperty('--x', (Math.random() - 0.5) * 650 + 'px');
+    q.style.setProperty('--y', (-60 - Math.random() * 300) + 'px');
+    q.style.fontSize = (12 + Math.random() * 18) + 'px';
+    q.style.color = i % 3 ? '#ffe33d' : '#ffe990';
+    q.style.animationDelay = (Math.random() * 0.4) + 's';
+    burst.appendChild(q);
+    setTimeout(() => q.remove(), 2400);
+  }
+}
+
+// Gallery Carousel with Touch Swiping and Arrow Navigation
+const track = document.getElementById('galleryTrack');
+const slides = [...document.querySelectorAll('.gallery-slide')];
+const dots = [...document.querySelectorAll('.gallery-dot')];
+let galleryIndex = 0;
+
+function goGallery(i) {
+  galleryIndex = (i + slides.length) % slides.length;
+  track.scrollTo({ left: slides[galleryIndex].offsetLeft, behavior: 'smooth' });
+  dots.forEach((d, n) => d.classList.toggle('active', n === galleryIndex));
+}
+
+document.getElementById('prevGallery').addEventListener('click', () => goGallery(galleryIndex - 1));
+document.getElementById('nextGallery').addEventListener('click', () => goGallery(galleryIndex + 1));
+dots.forEach((d, i) => d.addEventListener('click', () => goGallery(i)));
+
+track.addEventListener('scroll', () => {
+  const i = Math.round(track.scrollLeft / (track.clientWidth || 1));
+  if (i !== galleryIndex && i >= 0 && i < slides.length) {
+    galleryIndex = i;
+    dots.forEach((d, n) => d.classList.toggle('active', n === galleryIndex));
+  }
+}, { passive: true });
+
+// Background Music Control
+function setMusicState(on) {
+  musicState.textContent = on ? 'ON' : 'OFF';
+  musicControl.classList.toggle('music-disabled', !on);
+}
+
+musicControl.addEventListener('click', async (e) => {
+  e.preventDefault();
+  if (bgMusic.paused) {
+    if (!musicStarted) {
+      musicStarted = true;
+      bgMusic.currentTime = 0;
+    }
+    try {
+      await bgMusic.play();
+      setMusicState(true);
+    } catch (err) {
+      setMusicState(false);
+    }
+  } else {
+    bgMusic.pause();
+    setMusicState(false);
+  }
+});
+
+// Big Day Countdown to 10 December 2026 at 10:30 AM IST (UTC+05:30)
+const targetTime = new Date('2026-12-10T10:30:00+05:30').getTime();
+
+function updateCountdown() {
+  const now = Date.now();
+  let diff = Math.max(0, targetTime - now);
+  const d = Math.floor(diff / 86400000);
+  diff %= 86400000;
+  const h = Math.floor(diff / 3600000);
+  diff %= 3600000;
+  const m = Math.floor(diff / 60000);
+  const sec = Math.floor((diff % 60000) / 1000);
+
+  document.getElementById('cdDays').textContent = String(d).padStart(2, '0');
+  document.getElementById('cdHours').textContent = String(h).padStart(2, '0');
+  document.getElementById('cdMinutes').textContent = String(m).padStart(2, '0');
+  document.getElementById('cdSeconds').textContent = String(sec).padStart(2, '0');
+}
+updateCountdown();
+setInterval(updateCountdown, 1000);
+</script>
+</body>
+</html>
